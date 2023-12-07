@@ -1,0 +1,6 @@
+<map id="simlib3::EventNoticeAllocator" name="simlib3::EventNoticeAllocator">
+<area shape="rect" id="Node000001" title="allocate activation records fast" alt="" coords="7,95,199,120"/>
+<area shape="rect" id="Node000002" href="$structsimlib3_1_1EventNoticeLinkBase.html" title="calendar item &#45; PRIVATE for any implementation &#160;&#160;we use double&#45;linked circular list" alt="" coords="5,7,201,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,47,106,95,100,95,100,47"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="216,11,227,19,219,27,201,30,200,24,217,22,222,19,214,16"/>
+</map>

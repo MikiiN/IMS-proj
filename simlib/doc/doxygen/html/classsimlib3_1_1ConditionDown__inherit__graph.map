@@ -1,0 +1,11 @@
+<map id="simlib3::ConditionDown" name="simlib3::ConditionDown">
+<area shape="rect" id="Node000001" title="detector of TRUE&#45;&#45;&gt;FALSE" alt="" coords="5,296,165,321"/>
+<area shape="rect" id="Node000002" href="$classsimlib3_1_1Condition.html" title="change detector &#45; Boolean version (int)" alt="" coords="22,223,148,248"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,263,88,296,82,296,82,263"/>
+<area shape="rect" id="Node000003" href="$classsimlib3_1_1aCondition.html" title="abstract base class for all state&#45;condition blocks State event in combined model is executed at the t..." alt="" coords="19,151,151,175"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="88,190,88,223,82,223,82,190"/>
+<area shape="rect" id="Node000004" href="$classsimlib3_1_1aBlock.html" title="abstract base class for all blocksblocks/SimObject have not copy semantics (TODO: add move semantics)" alt="" coords="30,78,140,103"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="88,118,88,150,82,150,82,118"/>
+<area shape="rect" id="Node000005" href="$classsimlib3_1_1SimObject.html" title="Base class for almost all SIMLIB classes." alt="" coords="19,5,151,30"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="88,45,88,78,82,78,82,45"/>
+</map>

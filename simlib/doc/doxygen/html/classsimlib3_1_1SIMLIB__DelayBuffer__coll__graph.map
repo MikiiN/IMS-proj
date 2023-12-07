@@ -1,0 +1,7 @@
+<map id="simlib3::SIMLIB_DelayBuffer" name="simlib3::SIMLIB_DelayBuffer">
+<area shape="rect" id="Node000001" title="memory for delayed pairs (Time,value)" alt="" coords="79,106,269,131"/>
+<area shape="rect" id="Node000002" href="$structsimlib3_1_1Delay_1_1Buffer.html" title="abstract base class for delayed signal samples storage" alt="" coords="5,12,151,37"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,45,164,104,160,108,99,49"/>
+<area shape="rect" id="Node000003" href="$structsimlib3_1_1SIMLIB__DelayBuffer_1_1Pair.html" title="pair (t,val) for storing in buffer TODO: use std::tuple" alt="" coords="175,5,365,44"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="242,56,188,107,184,104,239,52"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="simlib3::Event" name="simlib3::Event">
+<area shape="rect" id="Node000001" title="abstract base class for events Event behavior is simple function (can not be interrupted)" alt="" coords="90,223,194,248"/>
+<area shape="rect" id="Node000005" href="$classsimlib3_1_1Sampler.html" title="objects of this class call global function periodically (typicaly used for output of continuous model..." alt="" coords="5,296,124,321"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="120,260,79,298,75,294,117,256"/>
+<area shape="rect" id="Node000006" href="$classsimlib3_1_1ZDelayTimer.html" title=" " alt="" coords="148,296,293,321"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="167,256,210,294,206,298,164,260"/>
+<area shape="rect" id="Node000002" href="$classsimlib3_1_1Entity.html" title="abstract base class for active entities (Process, Event) instances of derived classes provide Behavio..." alt="" coords="90,151,194,175"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,190,145,223,139,223,139,190"/>
+<area shape="rect" id="Node000003" href="$classsimlib3_1_1Link.html" title="base class for all double&#45;linked list items &#160;&#160;item can be at single place only (identified by where()..." alt="" coords="95,78,189,103"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="145,118,145,150,139,150,139,118"/>
+<area shape="rect" id="Node000004" href="$classsimlib3_1_1SimObject.html" title="Base class for almost all SIMLIB classes." alt="" coords="76,5,208,30"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="145,45,145,78,139,78,139,45"/>
+</map>

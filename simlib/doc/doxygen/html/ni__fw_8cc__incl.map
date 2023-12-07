@@ -1,0 +1,24 @@
+<map id="src/ni_fw.cc" name="src/ni_fw.cc">
+<area shape="rect" id="Node000001" title=" " alt="" coords="232,5,323,30"/>
+<area shape="rect" id="Node000002" href="$simlib_8h.html" title="Main SIMLIB/C++ interface." alt="" coords="75,151,142,175"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,23,198,27,162,37,128,54,101,80,95,92,94,107,100,136,95,137,89,107,90,91,97,76,125,50,160,32,197,22,231,17"/>
+<area shape="rect" id="Node000006" href="$internal_8h.html" title="Internal header file for SIMLIB/C++." alt="" coords="197,78,271,103"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="273,32,251,67,246,64,268,29"/>
+<area shape="rect" id="Node000008" href="$ni__fw_8h.html" title="Fowler&#45;Warten method." alt="" coords="111,78,173,103"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="256,33,178,73,176,68,254,28"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="294,78,352,103"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="287,29,310,64,306,67,283,32"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="376,78,430,103"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="300,28,371,68,369,73,297,33"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="454,78,518,103"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="313,28,440,71,439,76,311,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,223,65,248"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="98,178,59,215,55,211,94,174"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="89,223,128,248"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="111,176,111,209,106,209,106,176"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="151,223,204,248"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="122,174,158,211,154,215,118,178"/>
+<area shape="rect" id="Node000007" href="$errors_8h.html" title=" " alt="" coords="201,151,267,175"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="236,103,236,136,231,136,231,103"/>
+<area shape="poly" id="edge8_Node000008_Node000002" title=" " alt="" coords="139,104,122,139,117,136,134,102"/>
+</map>

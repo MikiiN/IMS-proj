@@ -1,0 +1,15 @@
+<map id="simlib3::aContiBlock3D3" name="simlib3::aContiBlock3D3">
+<area shape="rect" id="Node000001" title="continuous block with 3 inputs and alg." alt="" coords="71,415,236,439"/>
+<area shape="rect" id="Node000002" href="$classsimlib3_1_1aContiBlock3D2.html" title="continuous block vith 2 inputs and alg." alt="" coords="5,341,171,365"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,374,145,413,141,416,106,378"/>
+<area shape="rect" id="Node000003" href="$classsimlib3_1_1aContiBlock3D.html" title="Abstract 3D block with single 3D output." alt="" coords="30,153,189,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="109,193,92,340,87,340,104,193"/>
+<area shape="rect" id="Node000006" href="$classsimlib3_1_1Input3D.html" title="Continuous block connection (transparent reference)" alt="" coords="126,240,242,265"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="131,187,176,238,172,242,127,191"/>
+<area shape="rect" id="Node000004" href="$classsimlib3_1_1aBlock.html" title="abstract base class for all blocksblocks/SimObject have not copy semantics (TODO: add move semantics)" alt="" coords="54,79,165,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="112,119,112,153,107,153,107,119"/>
+<area shape="rect" id="Node000005" href="$classsimlib3_1_1SimObject.html" title="Base class for almost all SIMLIB classes." alt="" coords="44,5,175,30"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="112,45,112,79,107,79,107,45"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="192,279,193,288,194,328,185,366,163,415,158,413,180,364,189,327,188,289,187,280"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="165,277,101,342,97,338,161,273"/>
+</map>

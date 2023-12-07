@@ -1,0 +1,47 @@
+<map id="simlib3::aContiBlock1" name="simlib3::aContiBlock1">
+<area shape="rect" id="Node000001" title="base for continuous blocks with single input and algebraic loop check" alt="" coords="532,351,681,375"/>
+<area shape="rect" id="Node000005" href="$classsimlib3_1_1AlgLoop.html" title="abstract base for algebraic loop solvers" alt="" coords="738,79,855,103"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="611,335,625,289,648,230,682,168,703,140,727,114,746,102,749,106,730,118,707,143,686,171,653,232,630,290,617,337"/>
+<area shape="rect" id="Node000010" href="$classsimlib3_1_1Delay.html" title="continuous signal delay block" alt="" coords="744,128,849,153"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="615,336,631,298,655,252,687,205,727,164,748,151,751,155,730,168,692,208,660,255,636,300,620,338"/>
+<area shape="rect" id="Node000011" href="$structsimlib3_1_1Expression.html" title="reference to block expression This block can be used as handle for block expression trees" alt="" coords="729,177,864,202"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="620,336,664,275,693,242,727,213,750,200,752,205,730,217,697,246,668,278,625,339"/>
+<area shape="rect" id="Node000012" href="$classsimlib3_1_1Frict.html" title="nonlinear block: friction" alt="" coords="748,227,845,251"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="629,339,672,300,727,262,754,250,756,254,730,267,676,305,632,343"/>
+<area shape="rect" id="Node000013" href="$classsimlib3_1_1Function1.html" title="block parametrized by function with single argument" alt="" coords="733,276,860,301"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="651,342,728,311,760,299,761,304,730,316,653,347"/>
+<area shape="rect" id="Node000014" href="$classsimlib3_1_1Insv.html" title="nonlinear block: dead zone" alt="" coords="749,325,844,350"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="695,348,748,341,749,347,696,354"/>
+<area shape="rect" id="Node000015" href="$classsimlib3_1_1Lim.html" title="nonlinear block: limitation" alt="" coords="751,375,842,399"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="696,372,751,379,750,384,695,377"/>
+<area shape="rect" id="Node000016" href="$classsimlib3_1_1Qntzr.html" title="nonlinear block: quantizer" alt="" coords="745,424,848,449"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="654,379,730,409,762,421,760,426,728,413,652,384"/>
+<area shape="rect" id="Node000017" href="$classsimlib3_1_1Rline.html" title="nonlinear block: function defined by given table of values" alt="" coords="746,473,847,498"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="633,383,676,421,730,458,756,470,754,475,727,463,673,425,629,388"/>
+<area shape="rect" id="Node000018" href="$classsimlib3_1_1Status.html" title="State variables (memory) base for blocks with internal state (Relay, ...)" alt="" coords="742,523,851,547"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="625,387,668,447,697,479,730,507,753,520,750,524,727,512,693,483,664,450,621,390"/>
+<area shape="rect" id="Node000022" href="$classsimlib3_1_1ZDelay.html" title=" " alt="" coords="740,572,853,597"/>
+<area shape="poly" id="edge21_Node000001_Node000022" title=" " alt="" coords="620,388,636,426,660,471,692,517,730,557,751,569,748,574,727,561,688,520,656,474,632,428,615,390"/>
+<area shape="rect" id="Node000023" href="$classsimlib3_1_1__UMinus.html" title="unary minus block" alt="" coords="735,621,858,646"/>
+<area shape="poly" id="edge22_Node000001_Node000023" title=" " alt="" coords="617,389,630,435,653,493,686,554,707,582,730,606,749,619,746,623,727,610,703,585,682,557,648,496,625,437,611,390"/>
+<area shape="rect" id="Node000002" href="$classsimlib3_1_1aContiBlock.html" title="abstract base for continuous blocks with single output suitable for expression&#45;tree building and eval..." alt="" coords="343,351,484,375"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="499,360,532,360,532,366,499,366"/>
+<area shape="rect" id="Node000003" href="$classsimlib3_1_1aBlock.html" title="abstract base class for all blocksblocks/SimObject have not copy semantics (TODO: add move semantics)" alt="" coords="185,351,295,375"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="310,360,343,360,343,366,310,366"/>
+<area shape="rect" id="Node000004" href="$classsimlib3_1_1SimObject.html" title="Base class for almost all SIMLIB classes." alt="" coords="5,351,137,375"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="152,360,184,360,184,366,152,366"/>
+<area shape="rect" id="Node000006" href="$classsimlib3_1_1Bisect.html" title="solve using bisection method" alt="" coords="928,5,1035,30"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="840,70,911,41,944,28,945,33,913,45,842,75"/>
+<area shape="rect" id="Node000007" href="$classsimlib3_1_1Iterations.html" title="solve using iterations" alt="" coords="919,55,1043,79"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="869,79,918,72,919,78,870,84"/>
+<area shape="rect" id="Node000008" href="$classsimlib3_1_1Newton.html" title="solve using modified Newton&#39;s method" alt="" coords="924,104,1039,129"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="870,98,924,106,923,111,869,104"/>
+<area shape="rect" id="Node000009" href="$classsimlib3_1_1RegulaFalsi.html" title="solve using regula falsi method" alt="" coords="912,153,1050,178"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="848,107,865,114,913,138,944,150,942,155,911,143,863,119,846,112"/>
+<area shape="rect" id="Node000019" href="$classsimlib3_1_1Blash.html" title="nonlinear block &#45; backlash" alt="" coords="930,473,1033,498"/>
+<area shape="poly" id="edge18_Node000018_Node000019" title=" " alt="" coords="859,516,932,496,933,501,860,521"/>
+<area shape="rect" id="Node000020" href="$classsimlib3_1_1Hyst.html" title="nonlinear block &#45; hysteresis" alt="" coords="933,523,1029,547"/>
+<area shape="poly" id="edge19_Node000018_Node000020" title=" " alt="" coords="865,532,932,532,932,538,865,538"/>
+<area shape="rect" id="Node000021" href="$classsimlib3_1_1Relay.html" title="Relay this implementation detects exact time of switch." alt="" coords="930,572,1033,597"/>
+<area shape="poly" id="edge20_Node000018_Node000021" title=" " alt="" coords="860,549,933,569,932,574,859,554"/>
+</map>

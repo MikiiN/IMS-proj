@@ -1,0 +1,9 @@
+<map id="src/optimize.h" name="src/optimize.h">
+<area shape="rect" id="Node000001" title="Basic optimization framework + methods." alt="" coords="154,5,256,30"/>
+<area shape="rect" id="Node000002" href="$opt-hooke_8cc.html" title="Optimization algorithm &#45; Hooke&#45;Jeves." alt="" coords="5,78,122,103"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,39,88,80,86,75,167,35"/>
+<area shape="rect" id="Node000003" href="$opt-param_8cc.html" title="Optimization parameters." alt="" coords="146,78,264,103"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,45,208,78,202,78,202,45"/>
+<area shape="rect" id="Node000004" href="$opt-simann_8cc.html" title="Optimization algorithm &#45; simulated annealing (simplified)" alt="" coords="288,78,412,103"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="243,34,327,75,325,80,241,39"/>
+</map>

@@ -1,0 +1,30 @@
+<map id="simlib3::Facility" name="simlib3::Facility">
+<area shape="rect" id="Node000001" title="(SOL&#45;like) facility Facility with exclusive access and service priority" alt="" coords="161,371,274,395"/>
+<area shape="rect" id="Node000002" href="$classsimlib3_1_1SimObject.html" title="Base class for almost all SIMLIB classes." alt="" coords="433,5,564,30"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="419,25,295,34,160,47,100,57,51,67,19,80,11,86,8,93,8,283,12,306,23,325,39,340,60,352,110,369,161,377,160,382,109,374,58,357,36,345,19,328,7,308,3,284,3,91,6,83,16,75,49,62,99,51,159,42,295,28,418,20"/>
+<area shape="rect" id="Node000004" href="$classsimlib3_1_1Link.html" title="base class for all double&#45;linked list items &#160;&#160;item can be at single place only (identified by where()..." alt="" coords="494,81,589,106"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="515,42,537,79,532,82,510,44"/>
+<area shape="rect" id="Node000009" href="$classsimlib3_1_1TStat.html" title="time dependent statistic" alt="" coords="652,182,754,206"/>
+<area shape="poly" id="edge15_Node000009_Node000002" title=" " alt="" coords="573,32,616,50,655,77,675,103,689,132,703,180,698,182,684,133,670,106,651,81,614,55,571,37"/>
+<area shape="rect" id="Node000010" href="$classsimlib3_1_1Stat.html" title="class for statistical information gathering" alt="" coords="413,131,507,156"/>
+<area shape="poly" id="edge17_Node000010_Node000002" title=" " alt="" coords="493,45,466,132,461,130,488,43"/>
+<area shape="rect" id="Node000003" href="$classsimlib3_1_1Entity.html" title="abstract base class for active entities (Process, Event) instances of derived classes provide Behavio..." alt="" coords="43,182,147,206"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="96,221,99,257,111,293,129,317,151,338,196,368,193,372,148,342,125,321,106,296,93,258,91,221"/>
+<area shape="rect" id="Node000006" href="$structsimlib3_1_1EventNotice.html" title="activation record" alt="" coords="135,270,276,295"/>
+<area shape="poly" id="edge11_Node000006_Node000003" title=" " alt="" coords="111,217,136,244,176,267,173,272,133,248,108,220"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="480,111,148,184,147,179,479,106"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="605,85,615,93,607,101,589,103,589,98,605,96,610,93,602,90"/>
+<area shape="rect" id="Node000005" href="$classsimlib3_1_1List.html" title="list of Link* items, uses data from Link" alt="" coords="536,182,627,206"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="549,120,561,155,576,180,571,183,556,157,544,121"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="569,169,544,107,549,105,574,167"/>
+<area shape="rect" id="Node000008" href="$classsimlib3_1_1Queue.html" title="priority queue" alt="" coords="450,270,558,295"/>
+<area shape="poly" id="edge13_Node000008_Node000005" title=" " alt="" coords="563,219,516,271,512,268,559,216"/>
+<area shape="poly" id="edge8_Node000003_Node000006" title=" " alt="" coords="193,258,174,234,154,220,132,209,134,205,157,215,178,230,197,255"/>
+<area shape="rect" id="Node000007" href="$structsimlib3_1_1EventNoticeLinkBase.html" title="calendar item &#45; PRIVATE for any implementation &#160;&#160;we use double&#45;linked circular list" alt="" coords="170,182,366,206"/>
+<area shape="poly" id="edge9_Node000006_Node000007" title=" " alt="" coords="260,221,245,248,222,271,218,268,241,244,255,219"/>
+<area shape="poly" id="edge10_Node000007_Node000007" title=" " alt="" coords="381,186,392,194,384,201,366,204,365,199,382,196,387,194,379,191"/>
+<area shape="poly" id="edge12_Node000001_Node000008" title=" " alt="" coords="457,303,252,373,250,368,455,298"/>
+<area shape="poly" id="edge18_Node000001_Node000009" title=" " alt="" coords="688,220,660,248,618,276,572,297,499,327,423,349,346,366,275,377,274,372,345,361,422,344,497,322,570,292,616,272,657,244,684,216"/>
+<area shape="poly" id="edge14_Node000008_Node000009" title=" " alt="" coords="664,215,532,272,530,267,662,210"/>
+<area shape="poly" id="edge16_Node000008_Node000010" title=" " alt="" coords="470,170,482,207,502,269,497,271,476,209,465,171"/>
+</map>

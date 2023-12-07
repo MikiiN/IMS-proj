@@ -1,0 +1,17 @@
+<map id="simlib3::EventNotice" name="simlib3::EventNotice">
+<area shape="rect" id="Node000001" title="activation record" alt="" coords="195,84,336,109"/>
+<area shape="rect" id="Node000003" href="$classsimlib3_1_1Entity.html" title="abstract base class for active entities (Process, Event) instances of derived classes provide Behavio..." alt="" coords="151,173,255,197"/>
+<area shape="poly" id="edge9_Node000003_Node000001" title=" " alt="" coords="219,119,201,136,198,154,201,172,196,173,192,154,197,133,215,115"/>
+<area shape="rect" id="Node000002" href="$structsimlib3_1_1EventNoticeLinkBase.html" title="calendar item &#45; PRIVATE for any implementation &#160;&#160;we use double&#45;linked circular list" alt="" coords="168,7,363,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="268,47,268,84,263,84,263,47"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="379,12,390,19,382,26,364,29,363,23,380,21,385,19,377,17"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="223,160,234,147,258,108,262,111,239,150,227,164"/>
+<area shape="rect" id="Node000004" href="$classsimlib3_1_1Link.html" title="base class for all double&#45;linked list items &#160;&#160;item can be at single place only (identified by where()..." alt="" coords="24,84,118,109"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="102,115,187,170,184,174,99,120"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="134,89,145,97,136,104,119,107,118,101,134,99,140,97,131,93"/>
+<area shape="rect" id="Node000006" href="$classsimlib3_1_1List.html" title="list of Link* items, uses data from Link" alt="" coords="27,173,118,197"/>
+<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="70,123,70,149,73,172,67,172,64,149,65,123"/>
+<area shape="rect" id="Node000005" href="$classsimlib3_1_1SimObject.html" title="Base class for almost all SIMLIB classes." alt="" coords="5,7,137,32"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="74,47,74,84,68,84,68,47"/>
+<area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="69,158,69,110,74,110,75,158"/>
+</map>

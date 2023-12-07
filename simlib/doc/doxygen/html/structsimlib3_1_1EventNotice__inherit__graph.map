@@ -1,0 +1,5 @@
+<map id="simlib3::EventNotice" name="simlib3::EventNotice">
+<area shape="rect" id="Node000001" title="activation record" alt="" coords="32,78,174,103"/>
+<area shape="rect" id="Node000002" href="$structsimlib3_1_1EventNoticeLinkBase.html" title="calendar item &#45; PRIVATE for any implementation &#160;&#160;we use double&#45;linked circular list" alt="" coords="5,5,201,30"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,45,106,78,100,78,100,45"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="simlib3::Adaptor2D" name="simlib3::Adaptor2D">
+<area shape="rect" id="Node000001" title="Convert 2 scalar inputs to single 2D vector output." alt="" coords="18,223,151,248"/>
+<area shape="rect" id="Node000002" href="$classsimlib3_1_1aContiBlock2D.html" title="Abstract 2D block with single 2D output." alt="" coords="5,151,164,175"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,190,87,223,82,223,82,190"/>
+<area shape="rect" id="Node000003" href="$classsimlib3_1_1aBlock.html" title="abstract base class for all blocksblocks/SimObject have not copy semantics (TODO: add move semantics)" alt="" coords="29,78,140,103"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,118,87,150,82,150,82,118"/>
+<area shape="rect" id="Node000004" href="$classsimlib3_1_1SimObject.html" title="Base class for almost all SIMLIB classes." alt="" coords="19,5,150,30"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,45,87,78,82,78,82,45"/>
+</map>

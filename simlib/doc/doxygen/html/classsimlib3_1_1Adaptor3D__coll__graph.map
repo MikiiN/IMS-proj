@@ -1,0 +1,14 @@
+<map id="simlib3::Adaptor3D" name="simlib3::Adaptor3D">
+<area shape="rect" id="Node000001" title="Converts 3 scalar inputs to single 3D vector output." alt="" coords="50,365,183,390"/>
+<area shape="rect" id="Node000002" href="$classsimlib3_1_1aContiBlock3D.html" title="Abstract 3D block with single 3D output." alt="" coords="5,202,164,227"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,241,117,364,112,365,87,242"/>
+<area shape="rect" id="Node000003" href="$classsimlib3_1_1aBlock.html" title="abstract base class for all blocksblocks/SimObject have not copy semantics (TODO: add move semantics)" alt="" coords="45,79,156,104"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="100,119,89,202,83,201,94,119"/>
+<area shape="rect" id="Node000006" href="$classsimlib3_1_1aContiBlock.html" title="abstract base for continuous blocks with single output suitable for expression&#45;tree building and eval..." alt="" coords="122,153,263,178"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="128,111,180,151,176,155,125,115"/>
+<area shape="rect" id="Node000004" href="$classsimlib3_1_1SimObject.html" title="Base class for almost all SIMLIB classes." alt="" coords="35,5,166,30"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="103,45,103,79,98,79,98,45"/>
+<area shape="rect" id="Node000005" href="$classsimlib3_1_1Input.html" title="continuous block connection (transparent reference) wrapper for pointer to objects of aContiBlock der..." alt="" coords="138,251,237,275"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="174,289,126,367,121,364,170,287"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="194,193,190,251,185,250,188,193"/>
+</map>

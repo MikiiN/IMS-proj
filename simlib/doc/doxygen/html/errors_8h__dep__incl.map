@@ -1,0 +1,107 @@
+<map id="src/errors.h" name="src/errors.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="2864,5,2953,30"/>
+<area shape="rect" id="Node000002" href="$errors_8cc.html" title=" " alt="" coords="2801,78,2896,103"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2891,43,2860,79,2856,76,2887,40"/>
+<area shape="rect" id="Node000003" href="$internal_8h.html" title="Internal header file for SIMLIB/C++." alt="" coords="2920,78,3017,103"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="2930,40,2961,76,2957,79,2926,43"/>
+<area shape="rect" id="Node000004" href="$algloop_8cc.html" title="Algebraic loop solver blocks." alt="" coords="5,151,108,175"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="2906,105,2685,125,2482,137,2296,145,2123,147,1806,143,1511,131,1216,118,900,113,727,116,541,122,340,135,119,153,108,155,108,149,119,148,339,129,541,117,727,110,900,108,1216,113,1511,125,1806,137,2123,142,2296,139,2482,132,2684,119,2905,100"/>
+<area shape="rect" id="Node000005" href="$atexit_8cc.html" title="Implementation of global objects for cleanup." alt="" coords="132,151,224,175"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="2906,105,2694,124,2500,136,2321,143,2155,145,1852,139,1568,127,1286,115,983,111,818,113,640,121,446,134,235,153,224,155,224,149,235,148,446,129,639,116,817,108,983,105,1286,110,1569,122,1852,134,2155,139,2321,137,2500,131,2694,118,2906,100"/>
+<area shape="rect" id="Node000006" href="$barrier_8cc.html" title="Barrier synchronization." alt="" coords="248,151,345,175"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="2906,105,2704,123,2519,135,2348,142,2190,144,1900,140,1630,130,1360,119,1071,115,914,117,744,124,559,136,358,153,346,155,345,150,358,148,559,130,743,119,913,112,1071,110,1360,114,1630,124,1900,135,2190,139,2348,136,2518,130,2703,118,2905,100"/>
+<area shape="rect" id="Node000007" href="$calendar_8cc.html" title="Calendar queue implementation." alt="" coords="369,151,480,175"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="2906,105,2715,122,2539,134,2227,144,1953,141,1697,133,1441,123,1168,119,857,128,682,138,491,153,480,155,480,149,491,148,682,132,857,122,1168,114,1442,118,1697,127,1953,136,2227,139,2539,129,2714,117,2906,100"/>
+<area shape="rect" id="Node000008" href="$cond_8cc.html" title="State conditions." alt="" coords="504,151,593,175"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="2906,105,2723,121,2556,132,2259,140,1997,136,1753,127,1509,117,1248,114,953,124,786,136,605,153,594,155,593,149,604,148,786,131,952,119,1248,109,1510,112,1753,121,1997,131,2259,135,2556,127,2723,116,2906,100"/>
+<area shape="rect" id="Node000009" href="$continuous_8cc.html" title="continuous blocks definitions" alt="" coords="617,151,741,175"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="2906,105,2579,132,2301,142,2057,142,1829,135,1601,128,1357,125,1080,132,754,153,742,155,742,149,754,148,1080,127,1357,120,1601,123,1829,130,2057,136,2301,137,2579,126,2905,100"/>
+<area shape="rect" id="Node000010" href="$debug_8cc.html" title="Some internal debugging tools." alt="" coords="766,151,862,175"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="2906,105,2597,130,2335,138,2104,136,1888,129,1673,122,1443,120,1181,129,874,153,863,155,862,149,874,148,1181,123,1442,114,1673,116,1888,124,2104,131,2335,133,2597,124,2906,100"/>
+<area shape="rect" id="Node000011" href="$delay_8cc.html" title="Delay block implementation (experimental)" alt="" coords="886,151,977,175"/>
+<area shape="poly" id="edge10_Node000003_Node000011" title=" " alt="" coords="2906,105,2614,128,2367,137,2149,135,1945,128,1742,121,1525,120,1279,129,989,153,978,155,977,149,988,148,1278,123,1525,114,1742,116,1945,122,2149,129,2367,131,2614,123,2905,100"/>
+<area shape="rect" id="Node000012" href="$entity_8cc.html" title="Active entities base class." alt="" coords="1001,151,1093,175"/>
+<area shape="poly" id="edge11_Node000003_Node000012" title=" " alt="" coords="2906,105,2632,127,2399,135,2194,134,2003,128,1812,122,1608,121,1377,130,1105,153,1094,155,1093,149,1104,148,1377,125,1608,116,1813,117,2003,122,2195,128,2399,130,2632,122,2906,100"/>
+<area shape="rect" id="Node000013" href="$error_8cc.html" title="error messages processing" alt="" coords="1117,151,1204,175"/>
+<area shape="poly" id="edge12_Node000003_Node000013" title=" " alt="" coords="2906,105,2649,126,2431,134,2238,133,2059,127,1880,122,1689,122,1472,131,1217,153,1205,155,1204,150,1216,148,1472,125,1689,116,1880,117,2059,122,2239,127,2431,128,2649,121,2906,100"/>
+<area shape="rect" id="Node000014" href="$event_8cc.html" title="Discrete events base class." alt="" coords="1228,151,1320,175"/>
+<area shape="poly" id="edge13_Node000003_Node000014" title=" " alt="" coords="2906,105,2666,125,2463,133,2284,132,2117,128,1950,124,1771,124,1569,132,1331,153,1320,155,1320,150,1331,148,1569,127,1771,118,1950,118,2117,123,2284,127,2463,127,2666,120,2905,100"/>
+<area shape="rect" id="Node000015" href="$facility_8cc.html" title="Implementation of Facility." alt="" coords="1343,151,1442,175"/>
+<area shape="poly" id="edge14_Node000003_Node000015" title=" " alt="" coords="2906,105,2685,124,2498,132,2332,133,2178,130,2024,126,1860,127,1673,135,1454,153,1443,155,1442,149,1454,148,1673,129,1860,122,2024,121,2178,124,2332,127,2497,127,2685,119,2906,100"/>
+<area shape="rect" id="Node000016" href="$fun_8cc.html" title="Function blocks." alt="" coords="1466,151,1546,175"/>
+<area shape="poly" id="edge15_Node000003_Node000016" title=" " alt="" coords="2906,105,2701,123,2527,129,2373,129,2230,126,2087,123,1934,124,1761,133,1558,153,1546,155,1546,150,1558,148,1761,128,1934,119,2087,118,2230,121,2373,124,2527,124,2701,117,2906,100"/>
+<area shape="rect" id="Node000017" href="$graph_8cc.html" title=" " alt="" coords="1570,151,1663,175"/>
+<area shape="poly" id="edge16_Node000003_Node000017" title=" " alt="" coords="2906,105,2719,122,2560,129,2419,130,2289,129,2158,127,2019,128,1861,136,1675,153,1664,155,1663,150,1675,148,1861,131,2019,123,2158,122,2289,123,2419,125,2560,124,2719,117,2906,100"/>
+<area shape="rect" id="Node000018" href="$histo_8cc.html" title="Histogram implamentation." alt="" coords="1688,151,1777,175"/>
+<area shape="poly" id="edge17_Node000003_Node000018" title=" " alt="" coords="2906,105,2736,121,2591,128,2345,128,2100,129,1957,137,1789,153,1778,155,1777,150,1788,148,1957,131,2100,124,2345,123,2591,122,2736,115,2906,100"/>
+<area shape="rect" id="Node000019" href="$intg_8cc.html" title="Integrator block implementation." alt="" coords="1801,151,1883,175"/>
+<area shape="poly" id="edge18_Node000003_Node000019" title=" " alt="" coords="2906,105,2752,120,2621,126,2398,127,2176,129,2046,137,1894,153,1884,155,1883,150,1893,148,2046,132,2176,124,2398,121,2621,121,2752,114,2906,100"/>
+<area shape="rect" id="Node000020" href="$link_8cc.html" title="list item implementation" alt="" coords="1907,151,1988,175"/>
+<area shape="poly" id="edge19_Node000003_Node000020" title=" " alt="" coords="2906,105,2768,119,2651,125,2451,127,2253,131,2137,138,2001,153,1989,155,1988,150,2000,148,2136,133,2253,125,2451,122,2651,120,2768,113,2905,100"/>
+<area shape="rect" id="Node000021" href="$list_8cc.html" title="internal double&#45;linked list implementation" alt="" coords="2013,151,2090,175"/>
+<area shape="poly" id="edge20_Node000003_Node000021" title=" " alt="" coords="2906,105,2783,118,2679,124,2502,127,2326,131,2223,139,2102,153,2091,155,2090,150,2101,148,2222,134,2325,126,2502,122,2679,118,2783,112,2905,100"/>
+<area shape="rect" id="Node000022" href="$name_8cc.html" title="object&#45;name relation" alt="" coords="2114,151,2207,175"/>
+<area shape="poly" id="edge21_Node000003_Node000022" title=" " alt="" coords="2906,105,2712,123,2561,129,2410,135,2219,153,2208,155,2207,150,2219,148,2410,130,2561,124,2712,118,2906,100"/>
+<area shape="rect" id="Node000023" href="$ni__abm4_8cc.html" title=" " alt="" coords="2231,151,2341,175"/>
+<area shape="poly" id="edge22_Node000003_Node000023" title=" " alt="" coords="2906,106,2750,122,2628,130,2506,138,2353,153,2342,155,2341,150,2352,148,2506,132,2627,125,2749,117,2905,100"/>
+<area shape="rect" id="Node000024" href="$ni__euler_8cc.html" title=" " alt="" coords="2365,151,2471,175"/>
+<area shape="poly" id="edge23_Node000003_Node000024" title=" " alt="" coords="2906,106,2787,121,2693,130,2601,139,2484,153,2472,155,2471,150,2483,148,2600,134,2693,125,2786,116,2905,100"/>
+<area shape="rect" id="Node000025" href="$ni__fw_8cc.html" title=" " alt="" coords="2495,151,2586,175"/>
+<area shape="poly" id="edge24_Node000003_Node000025" title=" " alt="" coords="2906,106,2598,153,2587,155,2586,150,2597,148,2906,100"/>
+<area shape="rect" id="Node000026" href="$ni__rke_8cc.html" title="Numerical integration method &#45; Runge&#45;Kutta&#45;England." alt="" coords="2610,151,2706,175"/>
+<area shape="poly" id="edge25_Node000003_Node000026" title=" " alt="" coords="2907,108,2707,153,2706,148,2905,103"/>
+<area shape="rect" id="Node000027" href="$ni__rkf3_8cc.html" title=" " alt="" coords="2730,151,2831,175"/>
+<area shape="poly" id="edge26_Node000003_Node000027" title=" " alt="" coords="2925,111,2813,153,2811,148,2923,106"/>
+<area shape="rect" id="Node000028" href="$ni__rkf5_8cc.html" title=" " alt="" coords="2855,151,2957,175"/>
+<area shape="poly" id="edge27_Node000003_Node000028" title=" " alt="" coords="2951,116,2918,152,2914,149,2947,112"/>
+<area shape="rect" id="Node000029" href="$ni__rkf8_8cc.html" title=" " alt="" coords="2981,151,3082,175"/>
+<area shape="poly" id="edge28_Node000003_Node000029" title=" " alt="" coords="2990,112,3023,149,3019,152,2986,116"/>
+<area shape="rect" id="Node000030" href="$numint_8cc.html" title="Numerical integration methods." alt="" coords="3106,151,3205,175"/>
+<area shape="poly" id="edge29_Node000003_Node000030" title=" " alt="" coords="3014,106,3125,148,3123,153,3012,111"/>
+<area shape="rect" id="Node000031" href="$object_8cc.html" title="Root of SIMLIB/C++ class hierarchy." alt="" coords="3229,151,3324,175"/>
+<area shape="poly" id="edge30_Node000003_Node000031" title=" " alt="" coords="3032,103,3229,148,3228,153,3031,109"/>
+<area shape="rect" id="Node000032" href="$opt-hooke_8cc.html" title="Optimization algorithm &#45; Hooke&#45;Jeves." alt="" coords="3348,151,3464,175"/>
+<area shape="poly" id="edge31_Node000003_Node000032" title=" " alt="" coords="3031,99,3347,150,3347,155,3031,104"/>
+<area shape="rect" id="Node000033" href="$opt-param_8cc.html" title="Optimization parameters." alt="" coords="3488,151,3606,175"/>
+<area shape="poly" id="edge32_Node000003_Node000033" title=" " alt="" coords="3032,96,3230,117,3477,148,3488,150,3487,155,3476,153,3230,123,3031,101"/>
+<area shape="rect" id="Node000034" href="$opt-simann_8cc.html" title="Optimization algorithm &#45; simulated annealing (simplified)" alt="" coords="3630,151,3755,175"/>
+<area shape="poly" id="edge33_Node000003_Node000034" title=" " alt="" coords="3032,94,3288,114,3618,148,3630,150,3629,155,3618,153,3288,120,3031,99"/>
+<area shape="rect" id="Node000035" href="$output1_8cc.html" title="Output subsystem implementation." alt="" coords="3779,151,3883,175"/>
+<area shape="poly" id="edge34_Node000003_Node000035" title=" " alt="" coords="3032,92,3348,110,3556,126,3767,148,3779,150,3778,155,3767,153,3556,131,3348,115,3032,97"/>
+<area shape="rect" id="Node000036" href="$output2_8cc.html" title="Output subsystem implementation." alt="" coords="3907,151,4011,175"/>
+<area shape="poly" id="edge35_Node000003_Node000036" title=" " alt="" coords="3032,91,3398,107,3645,124,3895,148,3907,150,3906,155,3895,153,3645,129,3398,112,3031,96"/>
+<area shape="rect" id="Node000037" href="$print_8cc.html" title="Printing &#45; like printf." alt="" coords="4035,151,4121,175"/>
+<area shape="poly" id="edge36_Node000003_Node000037" title=" " alt="" coords="3032,89,3203,93,3449,101,3734,119,4023,148,4035,150,4035,155,4023,153,3733,124,3449,107,3203,98,3032,95"/>
+<area shape="rect" id="Node000038" href="$process_8cc.html" title="Implementation of quasiparallel processes (coroutines)" alt="" coords="4144,151,4252,175"/>
+<area shape="poly" id="edge37_Node000003_Node000038" title=" " alt="" coords="3031,90,3218,93,3491,103,3809,120,4133,148,4144,149,4143,155,4132,153,3808,125,3490,108,3218,99,3031,95"/>
+<area shape="rect" id="Node000039" href="$queue_8cc.html" title="Queue implementation (priority queue)" alt="" coords="4275,151,4371,175"/>
+<area shape="poly" id="edge38_Node000003_Node000039" title=" " alt="" coords="3031,89,3237,91,3541,98,3898,116,4083,130,4263,148,4275,150,4274,155,4263,153,4082,135,3898,121,3541,104,3237,96,3031,94"/>
+<area shape="rect" id="Node000040" href="$random1_8cc.html" title="Random number generators &#45; basic." alt="" coords="4396,151,4507,175"/>
+<area shape="poly" id="edge39_Node000003_Node000040" title=" " alt="" coords="3032,89,3254,91,3587,99,3981,117,4184,130,4383,148,4395,149,4395,155,4383,153,4184,136,3980,122,3587,104,3254,96,3032,94"/>
+<area shape="rect" id="Node000041" href="$random2_8cc.html" title="Random number generators &#45; transformations." alt="" coords="4532,151,4643,175"/>
+<area shape="poly" id="edge40_Node000003_Node000041" title=" " alt="" coords="3031,89,3272,90,3638,97,4073,114,4299,129,4519,148,4531,149,4531,155,4519,153,4298,134,4073,120,3638,102,3272,95,3031,94"/>
+<area shape="rect" id="Node000042" href="$run_8cc.html" title="Simulation control algorithm." alt="" coords="4668,151,4747,175"/>
+<area shape="poly" id="edge41_Node000003_Node000042" title=" " alt="" coords="3032,90,3822,105,4303,123,4504,134,4655,148,4667,150,4667,155,4655,153,4503,140,4302,128,3822,111,3032,95"/>
+<area shape="rect" id="Node000043" href="$sampler_8cc.html" title="Periodic sampler." alt="" coords="4771,151,4878,175"/>
+<area shape="poly" id="edge42_Node000003_Node000043" title=" " alt="" coords="3031,90,3869,108,4382,125,4597,136,4759,148,4771,149,4770,155,4759,153,4597,141,4382,130,3869,113,3031,95"/>
+<area shape="rect" id="Node000044" href="$semaphor_8cc.html" title="Process synchronization &#45; semaphore." alt="" coords="4903,151,5021,175"/>
+<area shape="poly" id="edge43_Node000003_Node000044" title=" " alt="" coords="3032,90,3929,108,4483,125,4715,136,4890,148,4902,149,4902,155,4890,153,4715,141,4483,130,3929,113,3032,95"/>
+<area shape="rect" id="Node000045" href="$simlib2D_8cc.html" title="2D vector block extension" alt="" coords="5046,151,5158,175"/>
+<area shape="poly" id="edge44_Node000003_Node000045" title=" " alt="" coords="3032,90,3994,106,4592,124,4843,135,5033,148,5045,149,5045,155,5032,153,4843,140,4592,129,3994,111,3031,95"/>
+<area shape="rect" id="Node000046" href="$simlib3D_8cc.html" title="3D vector block extension" alt="" coords="5182,151,5294,175"/>
+<area shape="poly" id="edge45_Node000003_Node000046" title=" " alt="" coords="3032,90,3437,94,4057,105,4698,122,4967,134,5170,148,5181,149,5181,155,5170,153,4967,139,4698,128,4057,110,3437,100,3032,95"/>
+<area shape="rect" id="Node000047" href="$stat_8cc.html" title="Statistics." alt="" coords="5318,151,5400,175"/>
+<area shape="poly" id="edge46_Node000003_Node000047" title=" " alt="" coords="3032,89,3460,91,4119,99,4803,117,5090,130,5306,148,5318,150,5317,155,5306,153,5090,136,4803,122,4119,104,3460,96,3032,94"/>
+<area shape="rect" id="Node000048" href="$stdblock_8cc.html" title="Non&#45;linear blocks." alt="" coords="5424,151,5534,175"/>
+<area shape="poly" id="edge47_Node000003_Node000048" title=" " alt="" coords="3031,89,3477,93,4166,102,4884,120,5186,133,5413,148,5424,149,5423,155,5412,153,5185,138,4884,125,4166,108,3476,98,3031,95"/>
+<area shape="rect" id="Node000049" href="$store_8cc.html" title="Store implementation." alt="" coords="5558,151,5648,175"/>
+<area shape="poly" id="edge48_Node000003_Node000049" title=" " alt="" coords="3032,89,3498,91,4227,98,4987,116,5306,130,5546,148,5558,150,5557,155,5546,153,5305,135,4986,121,4227,104,3498,96,3032,94"/>
+<area shape="rect" id="Node000050" href="$tstat_8cc.html" title="time dependent statistics" alt="" coords="5672,151,5758,175"/>
+<area shape="poly" id="edge49_Node000003_Node000050" title=" " alt="" coords="3032,89,3517,90,4279,96,4688,103,5075,114,5409,128,5661,148,5672,150,5671,155,5660,153,5409,134,5074,119,4688,109,4279,101,3517,95,3032,94"/>
+<area shape="rect" id="Node000051" href="$version_8cc.html" title="SIMLIB version number." alt="" coords="5782,151,5886,175"/>
+<area shape="poly" id="edge50_Node000003_Node000051" title=" " alt="" coords="3031,89,3533,91,4327,99,5158,116,5507,130,5770,148,5782,149,5781,155,5770,153,5507,135,5158,122,4327,104,3533,96,3031,94"/>
+<area shape="rect" id="Node000052" href="$waitunti_8cc.html" title="Process::WaitUntil implementation." alt="" coords="5909,151,6015,175"/>
+<area shape="poly" id="edge51_Node000003_Node000052" title=" " alt="" coords="3032,89,3554,90,4385,98,4832,105,5256,115,5622,129,5898,148,5909,149,5909,155,5898,153,5622,135,5256,121,4832,110,4385,103,3554,96,3032,94"/>
+<area shape="rect" id="Node000053" href="$zdelay_8cc.html" title="unit delay block implementation" alt="" coords="6038,151,6136,175"/>
+<area shape="poly" id="edge52_Node000003_Node000053" title=" " alt="" coords="3031,89,3574,89,4443,95,4911,102,5355,113,5739,128,6027,148,6038,149,6037,155,6027,153,5738,133,5355,118,4911,107,4443,100,3574,94,3031,94"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="simlib3::AlgLoopDetector" name="simlib3::AlgLoopDetector">
+<area shape="rect" id="Node000001" title="class for algebraic loop detection AlgLoopDetector object should be used in Value() method only it ch..." alt="" coords="5,240,173,265"/>
+<area shape="rect" id="Node000002" href="$classsimlib3_1_1aContiBlock.html" title="abstract base for continuous blocks with single output suitable for expression&#45;tree building and eval..." alt="" coords="18,153,160,178"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,193,92,240,86,240,86,193"/>
+<area shape="rect" id="Node000003" href="$classsimlib3_1_1aBlock.html" title="abstract base class for all blocksblocks/SimObject have not copy semantics (TODO: add move semantics)" alt="" coords="34,79,144,104"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="92,119,92,153,86,153,86,119"/>
+<area shape="rect" id="Node000004" href="$classsimlib3_1_1SimObject.html" title="Base class for almost all SIMLIB classes." alt="" coords="23,5,155,30"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="92,45,92,79,86,79,86,45"/>
+</map>
