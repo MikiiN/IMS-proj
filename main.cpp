@@ -6,7 +6,11 @@
 #define HOUR MINUTE * 60
 #define DAY HOUR * 24
 
+#define FULL_TRAIN_CAPACITY 232
+
 #define CASH_REGISTER_NUMBER 2
+
+#define WAGON_NUMBER 5
 
 #define BEFORE_SHIFT 0
 #define SHIFT 1
@@ -14,15 +18,35 @@
 bool BrnoTrainArrive = false;
 bool PragueTrainArrive = false;
 
+int BrnoFreeTrainCapacity;
+int PragueFreeTrainCapacity;
+
 Facility CashRegister[CASH_REGISTER_NUMBER];
 Facility RailwayToBrno;
-Facility RailwayToPraha;
-Store TrainEntrance();
+Facility RailwayToPrague;
+Store BrnoTrainEntrance("Brno Train Entrance", 2*WAGON_NUMBER);
+Store PragueTrainEntrance("Prague Train Entrance", 2*WAGON_NUMBER);
 Queue TrainBrnoQueue("Brno Train");
 Queue TrainPragueQueue("Prague Train");
 Histogram Table("Table", 0, 1, 20);
 
 using namespace std;
+
+class TrainToBrno;
+class TrainToPrague;
+
+class TrainTimeout : public Event {
+public:
+    TrainTimeout(TrainToBrno *train) : Event() , BrnoTrain(train) {
+    };
+    TrainTimeout(TrainToPrague *train) : Event() , PragueTrain(train) {
+    };
+    
+    void Behavior();
+    
+    TrainToPrague *PragueTrain = NULL;
+    TrainToBrno *BrnoTrain = NULL;
+};
 
 class Passenger : public Process {
     void Behavior(){
@@ -69,59 +93,116 @@ class Passenger : public Process {
         }
         if(PragueTrainArrive && BrnoTrainArrive){
             if(Random() < 0.5){
-                Into(TrainBrnoQueue);
+                addToBrnoQueue();
             }
             else{
-                Into(TrainPragueQueue);
+                addToPragueQueue();
             }
         }
         else if(PragueTrainArrive){
             if(Random() < 0.1){
-                Into(TrainBrnoQueue);
+                addToBrnoQueue();
             }
             else{
-                Into(TrainPragueQueue);
+                addToPragueQueue();
             }
         }
         else if(BrnoTrainArrive){
             if(Random() > 0.1){
-                Into(TrainBrnoQueue);
+                addToBrnoQueue();
             }
             else{
-                Into(TrainPragueQueue);
+                addToPragueQueue();
             }
         }
+    }
+
+    void addToBrnoQueue(){
+        Into(TrainBrnoQueue);
         Passivate();
 
+        BrnoFreeTrainCapacity--;
+        if(BrnoFreeTrainCapacity == 0){
+            return;
+        }
+
+        Enter(BrnoTrainEntrance, 1);
+        Wait(Uniform(3*SECOND, 5*SECOND));
+        Leave(BrnoTrainEntrance, 1);
+    }
+
+    void addToPragueQueue(){
+        Into(TrainPragueQueue);
+        Passivate();
+
+        PragueFreeTrainCapacity--;
+        if(PragueFreeTrainCapacity == 0){
+            return;
+        }
+
+        Enter(PragueTrainEntrance, 1);
+        Wait(Uniform(3*SECOND, 5*SECOND));
+        Leave(PragueTrainEntrance, 1);
     }
 };
 
 class TrainToBrno : public Process {
+    public:
     void Behavior() {
         BrnoTrainArrive = true;
         Wait(30 * MINUTE);
         Seize(RailwayToBrno);
         // TODO add 5 minute timer
+        TrainTimeout *timer = new TrainTimeout(this);
+        timer->Activate(Time + 5*MINUTE);
         Wait(Uniform(MINUTE, MINUTE + 30 * SECOND));
+        BrnoFreeTrainCapacity = FULL_TRAIN_CAPACITY - ((int) (Uniform(0.3, 0.4) * FULL_TRAIN_CAPACITY));
         while(TrainBrnoQueue.Length() > 0){
             (TrainBrnoQueue.GetFirst())->Activate();
         }
+        Passivate();
         Release(RailwayToBrno);
         BrnoTrainArrive = false;
+    }
+
+    void Timeout(){
+        this->Activate();
     }
 };
 
 class TrainToPrague : public Process {
+    public:
     void Behavior() {
         PragueTrainArrive = true;
         Wait(30 * MINUTE);
-        Seize(RailwayToPraha);
+        Seize(RailwayToPrague);
         // TODO add 5 minute timer
+        TrainTimeout *timer = new TrainTimeout(this);
+        timer->Activate(Time + 5*MINUTE);
         Wait(Uniform(MINUTE, MINUTE + 30 * SECOND));
-        Release(RailwayToPraha);
+        PragueFreeTrainCapacity = FULL_TRAIN_CAPACITY - ((int) (Uniform(0.2, 0.3) * FULL_TRAIN_CAPACITY));
+        while(TrainPragueQueue.Length() > 0){
+            (TrainPragueQueue.GetFirst())->Activate();
+        }
+        Passivate();
+        Release(RailwayToPrague);
         PragueTrainArrive = false;
     }
+
+    void Timeout(){
+        this->Activate();
+    }
 };
+
+void TrainTimeout::Behavior() {
+    if(PragueTrain != NULL){
+        PragueTrain->Timeout();
+    }
+    else{
+        BrnoTrain->Timeout();
+    }
+    Cancel();
+}
 
 class GeneratorPassenger : public Event {
     void Behavior() {
@@ -154,7 +235,6 @@ class GeneratorTrainToBrno : public Event {
     int counter = 0;
     void Behavior() {
         if(counter < 10){
-            TrainBrnoQueue.clear();
             (new TrainToBrno)->Activate();
             counter++;
             if (counter == 1 || counter == 7 || counter == 8) {
@@ -184,8 +264,6 @@ class GeneratorTrainToPrague : public Event {
     int counter = 0;
     void Behavior() {
         if(counter < 11){
-            cout << "-------------------" << endl;
-            TrainPragueQueue.clear();
             (new TrainToPrague)->Activate();
             counter++;
             if ((counter >= 1 && counter <= 3) || counter == 8 || counter == 9) {
