@@ -82,7 +82,7 @@ class Passenger : public Process {
         double rnd = Random();
         bool flag;
         if(PragueTrainArrive || BrnoTrainArrive){
-            flag = rnd > 0.15;
+            flag = rnd > 0.16;
         }
         else{
             flag = rnd > 0.4;
@@ -156,7 +156,7 @@ class TrainToBrno : public Process {
         TrainTimeout *timer = new TrainTimeout(this);
         timer->Activate(Time + 5*MINUTE);
         Wait(Uniform(MINUTE, MINUTE + 30 * SECOND));
-        BrnoFreeTrainCapacity = FULL_TRAIN_CAPACITY - ((int) (Uniform(0.3, 0.4) * FULL_TRAIN_CAPACITY));
+        BrnoFreeTrainCapacity = FULL_TRAIN_CAPACITY - ((int) (Uniform(0.3, 0.5) * FULL_TRAIN_CAPACITY));
         while(TrainBrnoQueue.Length() > 0){
             (TrainBrnoQueue.GetFirst())->Activate();
         }
@@ -180,7 +180,7 @@ class TrainToPrague : public Process {
         TrainTimeout *timer = new TrainTimeout(this);
         timer->Activate(Time + 5*MINUTE);
         Wait(Uniform(MINUTE, MINUTE + 30 * SECOND));
-        PragueFreeTrainCapacity = FULL_TRAIN_CAPACITY - ((int) (Uniform(0.2, 0.3) * FULL_TRAIN_CAPACITY));
+        PragueFreeTrainCapacity = FULL_TRAIN_CAPACITY - ((int) (Uniform(0.3, 0.5) * FULL_TRAIN_CAPACITY));
         while(TrainPragueQueue.Length() > 0){
             (TrainPragueQueue.GetFirst())->Activate();
         }
@@ -293,7 +293,7 @@ class GeneratorShift : public Event {
 
 int main() {
     Print(" test - SIMLIB/C++ example\n");
-    SetOutput("test.out");
+    SetOutput("modelStation.out");
     Init(0, DAY);
     (new GeneratorShift)->Activate();
     Run();
