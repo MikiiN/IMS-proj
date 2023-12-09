@@ -63,7 +63,7 @@ public:
 
 class Passenger : public Process {
     void Behavior(){
-        if (Random() < 0.45) {
+        if (Random() < 0.40) {
             buyTicket();
         }
         
@@ -133,7 +133,7 @@ class Passenger : public Process {
             }
         }
         Seize(CashRegister[index]);
-        Wait(Uniform(40 * SECOND, MINUTE));
+        Wait(Uniform(25 * SECOND, 50 * SECOND));
         Release(CashRegister[index]);
     }
 
@@ -180,7 +180,6 @@ class TrainToBrno : public Process {
         BrnoTrainArrive = true;
         Wait(30 * MINUTE);
         Seize(RailwayToBrno);
-        printTrainTime();
         TrainTimeout *timer = new TrainTimeout(this);
         timer->Activate(Time + 5*MINUTE);
         Wait(Uniform(MINUTE, MINUTE + 30 * SECOND));
@@ -240,10 +239,10 @@ class GeneratorPassenger : public Event {
     void Behavior() {
         (new Passenger)->Activate();
         if(BrnoTrainArrive && PragueTrainArrive){
-            Activate(Time + Exponential((20 * SECOND) / PassengerMultiplier));
+            Activate(Time + Uniform(1 * SECOND, 30 * SECOND) / PassengerMultiplier);
         }
         else if(BrnoTrainArrive || PragueTrainArrive){
-            Activate(Time + Exponential((40 * SECOND) / PassengerMultiplier));
+            Activate(Time + Uniform(1 * SECOND, 1 * MINUTE) / PassengerMultiplier);
         }
         else{
             Activate(Time + Uniform(MINUTE, 2 * MINUTE));
@@ -338,7 +337,7 @@ int main(int argc, char *argv[]) {
         }
         else if(!arg.compare("exp2")){
             Print(" Station model - experiment 2(find system weakness)\n");
-            PassengerMultiplier = 5;
+            PassengerMultiplier = 4;
         }
         else{
             Print(" Station model - normal\n");
@@ -349,7 +348,7 @@ int main(int argc, char *argv[]) {
     }
 
     SetOutput("modelStation.out");
-    Init(0, DAY);
+    Init(0, (20*HOUR + 10*MINUTE));
     (new GeneratorShift)->Activate();
     Run();
     for (int i = 0; i < CASH_REGISTER_NUMBER; i++){
