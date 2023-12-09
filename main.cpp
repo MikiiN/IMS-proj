@@ -1,5 +1,7 @@
 #include <simlib.h>
 #include <iostream>
+#include <string>
+#include <sstream>
 
 #define SECOND 1
 #define MINUTE SECOND * 60
@@ -18,8 +20,13 @@
 bool BrnoTrainArrive = false;
 bool PragueTrainArrive = false;
 
+bool noOtherBrnoTrain = false;
+bool noOtherPragueTrain = false;
+
 int BrnoFreeTrainCapacity;
 int PragueFreeTrainCapacity;
+
+int PassengerMultiplier = 1;
 
 Facility CashRegister[CASH_REGISTER_NUMBER];
 Facility RailwayToBrno;
@@ -28,9 +35,15 @@ Store BrnoTrainEntrance("Brno Train Entrance", 2*WAGON_NUMBER);
 Store PragueTrainEntrance("Prague Train Entrance", 2*WAGON_NUMBER);
 Queue TrainBrnoQueue("Brno Train");
 Queue TrainPragueQueue("Prague Train");
-Histogram Table("Table", 0, 1, 20);
 
 using namespace std;
+
+void printTrainTime(){
+    int t = (int) Time;
+    ostringstream str;
+    str << "Train in " << t / 3600 << ":" << (t / 60) % 60 << ":" << t % 60 << endl;
+    Print(str.str().data());
+}
 
 class TrainToBrno;
 class TrainToPrague;
@@ -51,93 +64,108 @@ public:
 class Passenger : public Process {
     void Behavior(){
         if (Random() < 0.45) {
-            int index = -1;
-            for (int i = 0; i < CASH_REGISTER_NUMBER; i++){
-                if (!CashRegister[i].Busy()){
-                    index = i;
-                    break;
-                }
-            }
-            if(index == -1){
-                if(CashRegister[0].QueueLen() < CashRegister[1].QueueLen()){
-                    index = 0;
-                }
-                else if(CashRegister[0].QueueLen() == CashRegister[1].QueueLen()){
-                    if(Random() < 0.5){
-                        index = 0;
-                    }
-                    else{
-                        index = 1;
-                    }
-                }
-                else{
-                    index = 1;
-                }
-            }
-            Seize(CashRegister[index]);
-            Wait(Uniform(40 * SECOND, MINUTE));
-            Release(CashRegister[index]);
+            buyTicket();
         }
         
         double rnd = Random();
         bool flag;
         if(PragueTrainArrive || BrnoTrainArrive){
+            // Prague or Brno train will arrive -> more passengers waiting
+            // for them
             flag = rnd > 0.16;
         }
         else{
             flag = rnd > 0.4;
         }
 
-        if (!flag){
+        if (!flag){ // other trains
             return;
         }
         if(PragueTrainArrive && BrnoTrainArrive){
             if(Random() < 0.5){
-                addToBrnoQueue();
+                getToBrnoTrain();
             }
             else{
-                addToPragueQueue();
+                getToPragueTrain();
             }
         }
         else if(PragueTrainArrive){
             if(Random() < 0.1){
-                addToBrnoQueue();
+                getToBrnoTrain();
             }
             else{
-                addToPragueQueue();
+                getToPragueTrain();
             }
         }
         else if(BrnoTrainArrive){
             if(Random() > 0.1){
-                addToBrnoQueue();
+                getToBrnoTrain();
             }
             else{
-                addToPragueQueue();
+                getToPragueTrain();
             }
         }
     }
 
-    void addToBrnoQueue(){
+    void buyTicket(){
+        int index = -1;
+        for (int i = 0; i < CASH_REGISTER_NUMBER; i++){
+            if (!CashRegister[i].Busy()){
+                index = i;
+                break;
+            }
+        }
+        if(index == -1){
+            // passenger choose shorter queue
+            if(CashRegister[0].QueueLen() < CashRegister[1].QueueLen()){
+                index = 0;
+            }
+            else if(CashRegister[0].QueueLen() == CashRegister[1].QueueLen()){
+                if(Random() < 0.5){
+                    index = 0;
+                }
+                else{
+                    index = 1;
+                }
+            }
+            else{
+                index = 1;
+            }
+        }
+        Seize(CashRegister[index]);
+        Wait(Uniform(40 * SECOND, MINUTE));
+        Release(CashRegister[index]);
+    }
+
+    void getToBrnoTrain(){
+        if(noOtherBrnoTrain || RailwayToBrno.Busy()){
+            return;
+        }
         Into(TrainBrnoQueue);
         Passivate();
 
         BrnoFreeTrainCapacity--;
         if(BrnoFreeTrainCapacity == 0){
-            return;
+            Into(TrainBrnoQueue);
+            Passivate();
         }
-
+        
         Enter(BrnoTrainEntrance, 1);
         Wait(Uniform(3*SECOND, 5*SECOND));
         Leave(BrnoTrainEntrance, 1);
     }
 
-    void addToPragueQueue(){
+    void getToPragueTrain(){
+        if(noOtherPragueTrain || RailwayToPrague.Busy()){
+            return;
+        }
         Into(TrainPragueQueue);
         Passivate();
 
         PragueFreeTrainCapacity--;
-        if(PragueFreeTrainCapacity == 0){
-            return;
+        if(PragueFreeTrainCapacity <= 0){
+            Into(TrainPragueQueue);
+            Passivate();
         }
 
         Enter(PragueTrainEntrance, 1);
@@ -152,15 +180,17 @@ class TrainToBrno : public Process {
         BrnoTrainArrive = true;
         Wait(30 * MINUTE);
         Seize(RailwayToBrno);
-        // TODO add 5 minute timer
+        printTrainTime();
         TrainTimeout *timer = new TrainTimeout(this);
         timer->Activate(Time + 5*MINUTE);
         Wait(Uniform(MINUTE, MINUTE + 30 * SECOND));
-        BrnoFreeTrainCapacity = FULL_TRAIN_CAPACITY - ((int) (Uniform(0.3, 0.5) * FULL_TRAIN_CAPACITY));
+        BrnoFreeTrainCapacity = ((int) (Uniform(0.5, 0.7) * FULL_TRAIN_CAPACITY));
         while(TrainBrnoQueue.Length() > 0){
             (TrainBrnoQueue.GetFirst())->Activate();
         }
         Passivate();
+        TrainBrnoQueue.Output();
+        TrainBrnoQueue.clear();
         Release(RailwayToBrno);
         BrnoTrainArrive = false;
     }
@@ -176,15 +206,17 @@ class TrainToPrague : public Process {
         PragueTrainArrive = true;
         Wait(30 * MINUTE);
         Seize(RailwayToPrague);
-        // TODO add 5 minute timer
+        printTrainTime();
         TrainTimeout *timer = new TrainTimeout(this);
         timer->Activate(Time + 5*MINUTE);
         Wait(Uniform(MINUTE, MINUTE + 30 * SECOND));
-        PragueFreeTrainCapacity = FULL_TRAIN_CAPACITY - ((int) (Uniform(0.3, 0.5) * FULL_TRAIN_CAPACITY));
+        PragueFreeTrainCapacity = ((int) (Uniform(0.5, 0.7) * FULL_TRAIN_CAPACITY));
         while(TrainPragueQueue.Length() > 0){
             (TrainPragueQueue.GetFirst())->Activate();
         }
         Passivate();
+        TrainPragueQueue.Output();
+        TrainPragueQueue.Clear();
         Release(RailwayToPrague);
         PragueTrainArrive = false;
     }
@@ -208,10 +240,10 @@ class GeneratorPassenger : public Event {
     void Behavior() {
         (new Passenger)->Activate();
         if(BrnoTrainArrive && PragueTrainArrive){
-            Activate(Time + Exponential(20 * SECOND));
+            Activate(Time + Exponential((20 * SECOND) / PassengerMultiplier));
         }
         else if(BrnoTrainArrive || PragueTrainArrive){
-            Activate(Time + Exponential(40 * SECOND));
+            Activate(Time + Exponential((40 * SECOND) / PassengerMultiplier));
         }
         else{
             Activate(Time + Uniform(MINUTE, 2 * MINUTE));
@@ -244,6 +276,9 @@ class GeneratorTrainToBrno : public Event {
                 Activate(Time + 2 * HOUR);
             }
         }
+        else{
+            noOtherBrnoTrain = true;
+        }
     }
 };
 
@@ -273,6 +308,9 @@ class GeneratorTrainToPrague : public Event {
                 Activate(Time + 2 * HOUR);
             }
         }
+        else{
+            noOtherPragueTrain = true;
+        }
     }
 };
 
@@ -291,8 +329,25 @@ class GeneratorShift : public Event {
     }
 };
 
-int main() {
-    Print(" test - SIMLIB/C++ example\n");
+int main(int argc, char *argv[]) {
+    if(argc > 1){
+        string arg = argv[1];
+        if(!arg.compare("exp1")){
+            Print(" Station model - experiment 1(double passenger rate)\n");
+            PassengerMultiplier = 2;
+        }
+        else if(!arg.compare("exp2")){
+            Print(" Station model - experiment 2(find system weakness)\n");
+            PassengerMultiplier = 5;
+        }
+        else{
+            Print(" Station model - normal\n");
+        }
+    }
+    else{
+        Print(" Station model - normal\n");
+    }
+
     SetOutput("modelStation.out");
     Init(0, DAY);
     (new GeneratorShift)->Activate();
@@ -300,8 +355,5 @@ int main() {
     for (int i = 0; i < CASH_REGISTER_NUMBER; i++){
         CashRegister[i].Output();
     }
-    TrainBrnoQueue.Output();
-    TrainPragueQueue.Output();
-    Table.Output();
     return 0;
 }
