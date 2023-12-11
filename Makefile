@@ -6,9 +6,11 @@ modelStation: main.cpp
 
 run: modelStation
 	./modelStation
+	./modelStation exp2
+	./modelStation exp3
 
 clean:
-	rm -rf modelStation modelStation.out
+	rm -rf modelStation modelStation*.out
 
 setPath:
 	export LD_LIBRARY_PATH=/usr/local/lib/

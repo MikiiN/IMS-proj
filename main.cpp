@@ -331,23 +331,26 @@ class GeneratorShift : public Event {
 int main(int argc, char *argv[]) {
     if(argc > 1){
         string arg = argv[1];
-        if(!arg.compare("exp1")){
-            Print(" Station model - experiment 1(double passenger rate)\n");
+        if(!arg.compare("exp2")){
+            Print(" Station model - experiment 2(double passenger rate)\n");
+            SetOutput("modelStationExp2.out");
             PassengerMultiplier = 2;
         }
-        else if(!arg.compare("exp2")){
-            Print(" Station model - experiment 2(find system weakness)\n");
-            PassengerMultiplier = 4;
+        else if(!arg.compare("exp3")){
+            Print(" Station model - experiment 3(find system weakness)\n");
+            SetOutput("modelStationExp3.out");
+            PassengerMultiplier = 3;
         }
         else{
             Print(" Station model - normal\n");
+            SetOutput("modelStationExp1.out");
         }
     }
     else{
         Print(" Station model - normal\n");
+        SetOutput("modelStationExp1.out");
     }
 
-    SetOutput("modelStation.out");
     Init(0, (20*HOUR + 10*MINUTE));
     (new GeneratorShift)->Activate();
     Run();
