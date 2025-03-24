@@ -1,5 +1,0 @@
-<map id="simlib3::Semaphore" name="simlib3::Semaphore">
-<area shape="rect" id="Node000001" title="basic synchronization tool for processes simplified implementation" alt="" coords="5,78,142,103"/>
-<area shape="rect" id="Node000002" href="$classsimlib3_1_1SimObject.html" title="Base class for almost all SIMLIB classes." alt="" coords="8,5,139,30"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,45,76,78,71,78,71,45"/>
-</map>

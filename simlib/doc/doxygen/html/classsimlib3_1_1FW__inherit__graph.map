@@ -1,7 +1,0 @@
-<map id="simlib3::FW" name="simlib3::FW">
-<area shape="rect" id="Node000001" title=" " alt="" coords="48,151,139,175"/>
-<area shape="rect" id="Node000002" href="$classsimlib3_1_1SingleStepMethod.html" title="base for single&#45;step integration methods" alt="" coords="5,78,182,103"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,118,96,150,91,150,91,118"/>
-<area shape="rect" id="Node000003" href="$classsimlib3_1_1IntegrationMethod.html" title="IntegrationMethod &#45; Abstract base class for integration methods." alt="" coords="6,5,181,30"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="96,45,96,78,91,78,91,45"/>
-</map>

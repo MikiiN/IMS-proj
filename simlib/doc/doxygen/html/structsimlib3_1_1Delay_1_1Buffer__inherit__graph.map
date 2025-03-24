@@ -1,5 +1,0 @@
-<map id="simlib3::Delay::Buffer" name="simlib3::Delay::Buffer">
-<area shape="rect" id="Node000001" title="abstract base class for delayed signal samples storage" alt="" coords="27,5,173,30"/>
-<area shape="rect" id="Node000002" href="$classsimlib3_1_1SIMLIB__DelayBuffer.html" title="memory for delayed pairs (Time,value)" alt="" coords="5,78,195,103"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,45,103,78,97,78,97,45"/>
-</map>

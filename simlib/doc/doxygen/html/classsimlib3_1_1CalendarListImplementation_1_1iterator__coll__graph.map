@@ -1,6 +1,0 @@
-<map id="simlib3::CalendarListImplementation::iterator" name="simlib3::CalendarListImplementation::iterator">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,95,237,134"/>
-<area shape="rect" id="Node000002" href="$structsimlib3_1_1EventNoticeLinkBase.html" title="calendar item &#45; PRIVATE for any implementation &#160;&#160;we use double&#45;linked circular list" alt="" coords="23,7,219,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,46,124,95,118,95,118,46"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="234,11,245,19,237,27,219,30,218,24,235,22,240,19,232,16"/>
-</map>

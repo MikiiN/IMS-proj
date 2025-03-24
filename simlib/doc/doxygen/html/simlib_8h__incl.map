@@ -1,9 +1,0 @@
-<map id="src/simlib.h" name="src/simlib.h">
-<area shape="rect" id="Node000001" title="Main SIMLIB/C++ interface." alt="" coords="64,5,153,30"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,78,65,103"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,32,59,70,55,66,94,29"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="89,78,128,103"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="111,31,111,63,106,63,106,31"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="151,78,204,103"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="122,29,158,66,154,69,118,32"/>
-</map>

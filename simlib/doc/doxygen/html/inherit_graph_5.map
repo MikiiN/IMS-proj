@@ -1,5 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$structsimlib3_1_1Delay_1_1Buffer.html" title="abstract base class for delayed signal samples storage" alt="" coords="5,5,151,30"/>
-<area shape="rect" id="Node000001" href="$classsimlib3_1_1SIMLIB__DelayBuffer.html" title="memory for delayed pairs (Time,value)" alt="" coords="199,5,388,30"/>
-<area shape="poly" id="edge3_Node000000_Node000001" title=" " alt="" coords="166,15,198,15,198,20,166,20"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="src/ni_rke.h" name="src/ni_rke.h">
-<area shape="rect" id="Node000001" title="Runge&#45;Kutta&#45;England method (default)" alt="" coords="69,5,158,30"/>
-<area shape="rect" id="Node000002" href="$ni__rke_8cc.html" title="Numerical integration method &#45; Runge&#45;Kutta&#45;England." alt="" coords="5,78,102,103"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,43,65,79,61,76,92,40"/>
-<area shape="rect" id="Node000003" href="$numint_8cc.html" title="Numerical integration methods." alt="" coords="125,78,225,103"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="135,39,167,76,163,79,131,43"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="simlib3::List" name="simlib3::List">
-<area shape="rect" id="Node000001" title="list of Link* items, uses data from Link" alt="" coords="25,151,117,175"/>
-<area shape="rect" id="Node000004" href="$classsimlib3_1_1Queue.html" title="priority queue" alt="" coords="17,223,125,248"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="74,190,74,223,68,223,68,190"/>
-<area shape="rect" id="Node000002" href="$classsimlib3_1_1Link.html" title="base class for all double&#45;linked list items &#160;&#160;item can be at single place only (identified by where()..." alt="" coords="24,78,118,103"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,118,74,150,68,150,68,118"/>
-<area shape="rect" id="Node000003" href="$classsimlib3_1_1SimObject.html" title="Base class for almost all SIMLIB classes." alt="" coords="5,5,137,30"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="74,45,74,78,68,78,68,45"/>
-</map>

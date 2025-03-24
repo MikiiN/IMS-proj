@@ -1,9 +1,0 @@
-<map id="simlib3::MultiStepMethod" name="simlib3::MultiStepMethod">
-<area shape="rect" id="Node000001" title="base for multi&#45;step integration method" alt="" coords="14,166,182,191"/>
-<area shape="rect" id="Node000002" href="$classsimlib3_1_1IntegrationMethod.html" title="IntegrationMethod &#45; Abstract base class for integration methods." alt="" coords="5,5,180,30"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,45,100,166,95,166,91,45"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="196,11,206,18,198,24,180,27,180,21,196,19,201,18,193,15"/>
-<area shape="rect" id="Node000003" href="$classsimlib3_1_1SingleStepMethod.html" title="base for single&#45;step integration methods" alt="" coords="114,79,290,104"/>
-<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="124,36,186,77,183,81,121,41"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="179,115,114,168,110,164,175,111"/>
-</map>

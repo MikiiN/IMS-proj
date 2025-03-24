@@ -1,5 +1,0 @@
-<map id="simlib3::Facility" name="simlib3::Facility">
-<area shape="rect" id="Node000001" title="(SOL&#45;like) facility Facility with exclusive access and service priority" alt="" coords="15,78,127,103"/>
-<area shape="rect" id="Node000002" href="$classsimlib3_1_1SimObject.html" title="Base class for almost all SIMLIB classes." alt="" coords="5,5,137,30"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,45,74,78,68,78,68,45"/>
-</map>

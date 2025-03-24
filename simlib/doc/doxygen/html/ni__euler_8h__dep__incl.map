@@ -1,7 +1,0 @@
-<map id="src/ni_euler.h" name="src/ni_euler.h">
-<area shape="rect" id="Node000001" title="Modified Euler method." alt="" coords="72,5,171,30"/>
-<area shape="rect" id="Node000002" href="$ni__euler_8cc.html" title=" " alt="" coords="5,78,112,103"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,43,71,79,67,76,99,39"/>
-<area shape="rect" id="Node000003" href="$numint_8cc.html" title="Numerical integration methods." alt="" coords="136,78,235,103"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="143,39,177,76,173,79,140,43"/>
-</map>

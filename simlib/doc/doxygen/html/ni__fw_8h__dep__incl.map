@@ -1,7 +1,0 @@
-<map id="src/ni_fw.h" name="src/ni_fw.h">
-<area shape="rect" id="Node000001" title="Fowler&#45;Warten method." alt="" coords="69,5,153,30"/>
-<area shape="rect" id="Node000002" href="$ni__fw_8cc.html" title=" " alt="" coords="5,78,97,103"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,43,63,79,59,76,90,40"/>
-<area shape="rect" id="Node000003" href="$numint_8cc.html" title="Numerical integration methods." alt="" coords="121,78,221,103"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="132,40,163,76,159,79,128,43"/>
-</map>
